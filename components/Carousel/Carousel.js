@@ -29,8 +29,11 @@ function carouselComponent() {
 
   const leftButtonDiv = document.createElement('div');
   leftButtonDiv.classList.add('left-button');
-  leftButtonDiv.textContent = '<';
   carouselDiv.appendChild(leftButtonDiv);
+
+  const leftArrowSpan = document.createElement('span');
+  leftArrowSpan.textContent = '&#60;';
+  leftButtonDiv.appendChild(leftArrowSpan);
 
   const image1 = document.createElement('img');
   image1.setAttribute('src', './assets/carousel/mountains.jpeg');
@@ -56,4 +59,8 @@ function carouselComponent() {
   rightButtonDiv.classList.add('left-button');
   rightButtonDiv.textContent = '>';
   carouselDiv.appendChild(rightButtonDiv);
+
+  const rightArrowSpan = document.createElement('span');
+  rightArrowSpan.textContent = '&#62;';
+  rightButtonDiv.appendChild(rightArrowSpan);
 }
