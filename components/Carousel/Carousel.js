@@ -17,3 +17,43 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+//Code starts here
+
+const carouselContainer = document.querySelector('.carousel-container');
+
+function carouselComponent() {
+  const carouselDiv = document.createElement('div');
+  carouselDiv.classList.add('carousel');
+  carouselContainer.appendChild(carouselDiv);
+
+  const leftButtonDiv = document.createElement('div');
+  leftButtonDiv.classList.add('left-button');
+  leftButtonDiv.textContent = '<';
+  carouselDiv.appendChild(leftButtonDiv);
+
+  const image1 = document.createElement('img');
+  image1.setAttribute('src', './assets/carousel/mountains.jpeg');
+  image1.setAttribute('alt', 'picture of some mountains');
+  carouselDiv.appendChild(image1);
+
+  const image2 = document.createElement('img');
+  image2.setAttribute('src', './assets/carousel/computer.jpeg');
+  image2.setAttribute('alt', 'picture of a computer');
+  carouselDiv.appendChild(image2);
+
+  const image3 = document.createElement('img');
+  image3.setAttribute('src', './assets/carousel/trees.jpeg');
+  image3.setAttribute('alt', 'picture of trees');
+  carouselDiv.appendChild(image3);
+
+  const image4 = document.createElement('img');
+  image4.setAttribute('src', './assets/carousel/turntable.jpeg');
+  image4.setAttribute('alt', 'picture of a turn table that disc jockeys use');
+  carouselDiv.appendChild(image4);
+
+  const rightButtonDiv = document.createElement('div');
+  rightButtonDiv.classList.add('left-button');
+  rightButtonDiv.textContent = '>';
+  carouselDiv.appendChild(rightButtonDiv);
+}
